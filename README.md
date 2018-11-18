@@ -53,5 +53,5 @@ take [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Selection) for examp
 1. What's the difference between **Page** and **Title**?   
    Well,**Page** is specially modified to cater the page turning function, which will automatically parse the url of the button and form the right url of the next page.
  
-2. Where can I find the output file?
+2. Where can I find the output file?   
    Just click the "setting" icon on the top-left corner, and you can see the folder you are using(and click the "open folder" button to open it)
