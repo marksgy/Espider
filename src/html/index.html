@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Hello World!</title>
+
+    <link rel="stylesheet" href="../css/index.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/header.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/main.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/inputbox.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/entryform.css" type="text/css"/>
+    <link rel="stylesheet" href="../css/setting.css" type="text/css"/>
+</head>
+<body>
+<header>
+    <div id="menu">
+        <div id='excel' class="menufunction">
+            <img src="../css/setting.svg" alt="">
+        </div>
+        <div id='espider' class="menufunction">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 50 50">
+                <g id="spider" data-name="Artboard – 1" class="cls-1">
+
+                    <g id="Ellipse_3" data-name="Ellipse 3" class="cls-2" transform="translate(16.5 14.5)">
+                        <ellipse class="cls-4" cx="8.5" cy="11.5" rx="8.5" ry="11.5"/>
+                        <ellipse class="cls-5" cx="8.5" cy="11.5" rx="8" ry="11"/>
+                    </g>
+                    <g id="Ellipse_4" data-name="Ellipse 4" class="cls-2" transform="translate(20 8)">
+                        <circle class="cls-4" cx="5" cy="5" r="5"/>
+                        <circle class="cls-5" cx="5" cy="5" r="4.5"/>
+                    </g>
+                    <path id="Path_5" data-name="Path 5" class="cls-3" d="M431-1917" transform="translate(-413 1937)"/>
+                    <line id="Line_18" data-name="Line 18" class="cls-3" x1="6" y1="3" transform="translate(12 17)"/>
+                    <line id="Line_19" data-name="Line 19" class="cls-3" x1="8" transform="translate(9 25)"/>
+                    <line id="Line_20" data-name="Line 20" class="cls-3" x1="6" y2="3" transform="translate(12 30)"/>
+                    <line id="Line_21" data-name="Line 21" class="cls-3" y1="3" x2="6" transform="translate(32 17)"/>
+                    <line id="Line_22" data-name="Line 22" class="cls-3" x1="8" transform="translate(33 25)"/>
+                    <line id="Line_23" data-name="Line 23" class="cls-3" x2="6" y2="3" transform="translate(32 30)"/>
+                </g>
+            </svg>
+        </div>
+        
+        <div id='devtool' class="menufunction">
+                <img src="../css/question.svg" alt="">
+        </div>
+
+    </div>
+    <div id="threebtn">
+        <div id="headermin" class="headerdark headergroup">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 1">
+                <line id="minimize" class="cls-1" x2="10" transform="translate(0 0.5)"/>
+            </svg>
+        </div>
+        <div id="headermax" class="headerdark headergroup">
+            <svg class="hmaxmax" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                <g id="full" transform="translate(-1845 -9.5)">
+                    <line id="Line_11" data-name="Line 11" class="cls-1" y2="10" transform="translate(1845.5 9.5)"/>
+                    <line id="Line_12" data-name="Line 12" class="cls-1" x2="9" transform="translate(1846 19)"/>
+                    <line id="Line_13" data-name="Line 13" class="cls-1" y1="10" transform="translate(1854.5 9.5)"/>
+                    <line id="Line_14" data-name="Line 14" class="cls-1" x1="10" transform="translate(1845 10)"/>
+                </g>
+            </svg>
+            <svg class='hmaxmin' style="display: none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10 10">
+                <g id="fullscreenExit" transform="translate(-1827 -8)">
+                    <line id="Line_1" data-name="Line 1" class="cls-1" y2="8" transform="translate(1827.5 10)"/>
+                    <line id="Line_2" data-name="Line 2" class="cls-1" x2="8" transform="translate(1827 17.5)"/>
+                    <line id="Line_3" data-name="Line 3" class="cls-1" y1="8" transform="translate(1834.5 10)"/>
+                    <line id="Line_4" data-name="Line 4" class="cls-1" x2="8" transform="translate(1827 10.5)"/>
+                    <line id="Line_5" data-name="Line 5" class="cls-1" y1="3" transform="translate(1829.5 8)"/>
+                    <line id="Line_6" data-name="Line 6" class="cls-1" x2="8" transform="translate(1829 8.5)"/>
+                    <line id="Line_7" data-name="Line 7" class="cls-1" y2="8" transform="translate(1836.5 8)"/>
+                    <line id="Line_8" data-name="Line 8" class="cls-1" x1="3" transform="translate(1834 15.5)"/>
+                </g>
+            </svg>
+        </div>
+        <div id="headercross" class="headerred headergroup">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 10.707 10.707">
+                <g id="close" transform="translate(-1884.646 -7.646)">
+                    <line id="Line_9" data-name="Line 9" class="cls-1" x2="10" y2="10" transform="translate(1885 8)"/>
+                    <line id="Line_10" data-name="Line 10" class="cls-1" x1="10" y2="10" transform="translate(1885 8)"/>
+                </g>
+            </svg>
+        </div>
+    </div>
+</header>
+<main>
+    <div id="setting">
+        <div id="setting-interval" class="set">
+            <div class="txt">---Spider interval（s）---</div>
+            <input id="setting-interval-input" >
+        </div>
+        <div id="folder-selection" class="set">
+                <div class="txt">---Select your folder---</div>
+                <p >Current folder：</p>
+                <p id="folder-p">none</p>
+                <button id="folderselection">Select</button>
+                <button id="open-folder">Open Folder</button>
+        </div>
+        <div id="output-type" class="set">
+            <div class="txt">---Select output type---</div>
+            <form>
+                <label><input type="radio" name="output-type" value="txt">txt</label>
+                <label><input type="radio" name="output-type" value="excel">excel</label>
+            </form>
+    </div>
+    <div id="encoding" class="set">
+        <div class="txt">---Encoding---</div>
+        <form>
+            <label><input type="radio" name="encoding" value="utf8">utf8</label>
+            <label><input type="radio" name="encoding" value="gbk">gbk</label>
+        </form>
+</div>
+        <div class="set">
+            <button id="setting-btn">Save</button>
+            
+        </div>
+
+        
+    </div>
+    <div id="espiderform">
+        <h1 id="progress">Input your website address</h1>
+        <div class="inputbox">
+            <input id='urlinput' type="url" class="inputurl">
+            <div id='selector' class="selector">
+                <input id='selectorinput' type="text" readonly="readonly" placeholder="Select">
+                <div id='selectoricon' class="icon"><i></i></div>
+                <div id='selectorlist' class="selectorlist">
+                    <ul>
+                        <li>page</li>
+                        <li>title</li>
+                        <li>content</li>
+                        <li>search</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div id="entryform">
+            <div id="formtitle" class="formentry">
+                <div class="formnum innerform">num</div>
+                <div class="formurl innerform">url</div>
+                <div class="formtype innerform">type</div>
+            </div>
+            <template id="formtemplate">
+                <div class="formentry formdelete">
+                    <div class="formnum innerform"></div>
+                    <div class="formurl innerform"></div>
+                    <div class="formtype innerform"></div>
+                </div>
+            </template>
+            <div style="position:relative;height:30px;margin-top: 10px;">
+                <div id="formbutton">
+                        <div id="form-reset" class="formbtn"><img src="../css/reset.svg"  alt=""></div>
+                        <div id="form-delete" class="formbtn"><img src="../css/cross.svg" alt=""></div>
+                </div>
+                
+            </div>
+        </div>
+
+
+    </div>
+    <div id=""></div>
+
+
+    <div id="next">
+        <img src="../css/more.svg" alt="">
+    </div>
+</main>
+<script>
+    require('../js/renderer.js');
+</script>
+
+</body>
+
+</html>

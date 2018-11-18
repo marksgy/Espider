@@ -1,0 +1,49 @@
+#setting{
+    width: 250px;
+    background: rgba(12, 12, 12, 0.9);
+    height: 100%;
+    position: absolute;
+    left: -250px;
+    top: 30px;
+    transition: .2s ease-in-out;
+    z-index: 1000 ;
+    color: white;
+}
+
+.setting-active{
+    transform: translate(250px,0);
+}
+
+.set{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-left: 15px;
+    overflow: hidden;
+    
+}
+
+.set>.txt{
+    color: white;
+    margin-bottom: 5px;
+}
+
+.set>.input>input{
+    
+    box-sizing: border-box;
+    -webkit-appearance: none;
+    background-color: rgb(204, 204, 204);
+    border: none;
+}
+
+.set>.input>input:focus {
+    outline: none;
+    border:1px solid #409eff;
+
+   
+}
+.set>p{
+    margin: 15px 0 15px 0;
+    color: white;
+    word-wrap:break-word;
+  
+}

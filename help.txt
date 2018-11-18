@@ -1,0 +1,7 @@
+0. npm run packager
+
+1. electron-windows-store --input-directory ./finalout/Espider-win32-x64 --output-directory ./finaluwp  --package-version 1.0.0.0 --package-name 7190Seineinrain.Espider --publisher-display-name Seineinrain
+2. change all the display name
+3. 权限
+4. ./makeappx.exe  pack -v /d C:\Users\marks\Desktop\tspider\finaluwp\pre-appx /p Espider
+5. 

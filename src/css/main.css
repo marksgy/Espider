@@ -1,0 +1,77 @@
+main {
+    width: 100%;
+    height: 100%;
+    background: #323232;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    user-select: none;
+}
+
+#espiderform {
+    display: block;
+    width: calc(100% - 60px);
+    height: calc(100% - 60px);
+    background: #565f68;
+}
+
+#next {
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(100% - 50px);
+    background: rgb(143, 238, 0);
+    overflow: hidden;
+    text-align: center;
+    padding: 9px 9px 9px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+#before {
+    display: none;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    top: calc(50% - 25px);
+    left: 0;
+    background: skyblue;
+    overflow: hidden;
+    text-align: center;
+    padding: 9px 9px 9px 0;
+    box-sizing: border-box;
+    cursor: pointer;
+    transform: rotate(180deg);
+}
+
+h1 {
+    font-size: 45px;
+    margin-top: 80px;
+    color: #fafafb;
+    text-align: center;
+}
+
+#before::after, #next::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    background-image: radial-gradient(circle, #ffffff 10%, transparent 10.01%);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    transform: scale(10, 10);
+    opacity: 0;
+    transition: transform .3s, opacity .5s;
+}
+
+#before:active::after, #next:active::after {
+    transform: scale(0, 0);
+    opacity: .3;
+    transition: 0s;
+}
+

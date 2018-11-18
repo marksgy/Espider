@@ -1,0 +1,97 @@
+header {
+    -webkit-app-region: drag;
+    width: 100%;
+    height: 33px;
+    background: #0c0c0c;
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+    user-select: none;
+    z-index: 10000;
+}
+
+#menu {
+    height: 30px;
+    font-size: 0;
+
+    overflow: hidden;
+    z-index: 100;
+    -webkit-app-region: no-drag;
+}
+
+.menufunction {
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    vertical-align: bottom;
+}
+
+.menufunction {
+    width: 30px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.menufunction svg {
+    margin-top: 2px;
+
+}
+
+#spider > .cls-1, .cls-2, .cls-3, .cls-4, .cls-5 {
+    stroke: #287da2;
+    fill: #287da2;
+}
+
+#threebtn {
+    height: 33px;
+}
+
+.cls-1 {
+    fill: none;
+    stroke: #f1f1f0;
+}
+
+.headergroup svg {
+    height: 10px;
+    width: 10px;
+    margin: 10px 23px;
+}
+
+.headerred:hover > svg > g > .cls-1 {
+    stroke: white;
+}
+
+.headergroup {
+    width: 56px;
+    height: 30px;
+    background: rgba(0, 0, 0, 0);
+    display: inline-block;
+    transition: 0.2s;
+    -webkit-app-region: no-drag;
+}
+
+.headerred:hover {
+    background: #E81123;
+
+}
+
+.headerred:active {
+    background: #DC5C66;
+}
+
+.menufunction:hover, .headerdark:hover {
+    background: rgba(255, 255, 255, 0.082);
+
+}
+
+.menufunction:active, .headerdark:active {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.menufunction img{
+    width: 25px;
+    height: 25px;
+}
