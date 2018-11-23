@@ -1,6 +1,3 @@
-# To [download](https://pan.baidu.com/s/14CJWv3x1rMv0Oq04-QXkxA)
-I only packed for Windows10, because mac guy are more likely to be developers(the truth is that I'm lazy)...
-
 # Introduction to Espider
 ## What is Espider
 A web spider based on electron
