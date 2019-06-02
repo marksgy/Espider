@@ -10,21 +10,21 @@
   "author": "S.I.R",
   "license": "ISC",
   "dependencies": {
-    "cheerio": "^1.0.0-rc.2",
-    "exceljs": "^1.6.2",
+    "cheerio": "^1.0.0-rc.3",
+    "exceljs": "^1.12.0",
     "faker": "^4.1.0",
-    "jsdom": "^12.2.0",
-    "superagent": "^4.0.0-beta.5",
+    "jsdom": "^15.1.1",
+    "superagent": "^5.0.5",
     "superagent-charset": "^1.2.0"
   },
   "devDependencies": {
-    "@types/node": "^10.11.7",
-    "electron": "^3.0.8",
-    "electron-packager": "^12.2.0",
+    "@types/node": "^12.0.4",
+    "electron": "^5.0.2",
+    "electron-packager": "^13.1.1",
     "electron-windows-store": "^2.1.0",
-    "gulp": "^3.9.1",
-    "gulp-typescript": "^5.0.0-alpha.3",
-    "through2": "^2.0.3",
-    "typescript": "^3.1.2"
+    "gulp": "^4.0.2",
+    "gulp-typescript": "^5.0.1",
+    "through2": "^3.0.1",
+    "typescript": "^3.5.1"
   }
 }
