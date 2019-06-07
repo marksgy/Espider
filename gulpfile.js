@@ -10,29 +10,44 @@ const PATHS={
     output:'src/js',
 
     html:'src/html/**/*.html',
-    outputhtml:'src/js/html'
+    outputhtml:'src/ts/html'
 }
-gulp.task('watch', function(){
-    return gulp.watch(PATHS.entry, function(event) {
-        gulp.src(event.path,{base:'src/ts'})
+
+function webcomponents(){
+    gulp.watch(PATHS.html).on('all', function(stats, path) {
+        gulp.src(path,{base:'src/html'})
+         .pipe(htmlcss2js())
+         .pipe(gulp.dest(PATHS.outputhtml));
+      })  
+}
+
+function tscompile(){
+    gulp.watch(PATHS.entry).on('all', function(stats, path) {
+        gulp.src(path,{base:'src/ts'})
          .pipe(tsProject())
          .pipe(gulp.dest(PATHS.output));
-      });
-    //   gulp.watch(PATHS.html, function(event) {
-    //     gulp.src(event.path)
-    //      .pipe(htmlcss2js())
-    //      .pipe(gulp.dest(PATHS.outputhtml));
-    //   });
-  })
+         console.log(`${path} completed`)
+      })  
+}
+exports.default=gulp.parallel(webcomponents,tscompile)
+// gulp.task('htmlcss2js',function(){
+//     return gulp.watch(PATHS.html, function(event) {
+//         gulp.src(event.path)
+//          .pipe(htmlcss2js())
+//          .pipe(gulp.dest(PATHS.outputhtml));
+//       });
+
+// })
+// gulp.task('ts',function(){
+//     return gulp.watch(PATHS.entry, function(event) {
+//         gulp.src(event.path,{base:'src/ts'})
+//          .pipe(tsProject())
+//          .pipe(gulp.dest(PATHS.output));
+//       });
+    
+//   })
   
 
 
   
-gulp.task("default", function () {
-    return gulp.src(PATHS.entry)
-        .pipe(tsProject())
-        .pipe(gulp.dest(PATHS.output));
-    // gulp.src(PATHS.entry1)
-    //     .pipe(tsProject2())
-    //     .pipe(gulp.dest(PATHS.output));
-});
+// gulp.task("default", gulp.parallel('ts','htmlcss2js'));
