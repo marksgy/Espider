@@ -1,4 +1,9 @@
 # Introduction to Espider
+## Caution
+This is not the ultimate version. There might be some bugs in it. If you encountered some unexpected problems, please help yourself.
+Uncomment this line in index.js to open the dev tool (the same tool you use in Chrome F12)
+![](https://user-images.githubusercontent.com/21007696/72033507-7c1a3c00-32cd-11ea-9852-6b73370f08ef.png)
+
 ## What is Espider
 A web spider based on electron
 
