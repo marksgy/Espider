@@ -4,7 +4,7 @@ const electron_1 = require("electron");
 const mainIcp_1 = require("./src/js/newWindow/mainIcp");
 let mainWindow;
 function createWindow() {
-    mainWindow = new electron_1.BrowserWindow({ width: 800, height: 600, frame: false });
+    mainWindow = new electron_1.BrowserWindow({ width: 800, height: 600, frame: false, nodeIntegration: true });
     // and load the index.html of the app.
     mainWindow.loadFile('./src/html/index.html');
     // Open the DevTools.
