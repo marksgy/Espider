@@ -7,6 +7,11 @@ Uncomment this line in index.js to open the dev tool (the same tool you use in C
 ## What is Espider
 A web spider based on electron
 
+## How to install it?  
+##### 1. `npm install`
+##### 2. `npm run packager`
+##### 3. Then the executable file will be created in finalout folder.  
+
 ## How to use it？
 ### 1. Insert your target web address.
 ![](https://user-images.githubusercontent.com/21007696/47963742-2152d800-e06b-11e8-9fbe-728e5bbfefbc.png)
@@ -54,6 +59,6 @@ take [MDN](https://developer.mozilla.org/en-US/docs/Web/API/Selection) for examp
 ## Questions   
 1. What's the difference between **Page** and **Title**?   
    Well,**Page** is specially modified to cater the page turning function, which will automatically parse the url of the button and form the right url of the next page.
- 
+
 2. Where can I find the output file?   
    Just click the "setting" icon on the top-left corner, and you can see the folder you are using(and click the "open folder" button to open it)
