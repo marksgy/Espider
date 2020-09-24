@@ -1,0 +1,10 @@
+{
+    "plugList":["fuck"],
+    "plugMap":[
+        {
+            "name":"fuck",
+            "type":"javascript",
+            "path":"./fuck/index.js"
+        }
+    ]
+}

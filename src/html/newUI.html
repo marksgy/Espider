@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="../css/plugIn/card.css">
+        <link rel="stylesheet" type="text/css" href="../css/plugIn/scrollbar.css">
+        <link rel="stylesheet" type="text/css" href="../css/plugIn/theme.css">
+
+        <script src="../ts/plugIn/card.js"></script>
+        
+    </head>
+    <body>
+        <template id="card-model">
+            <div class="append" ondragenter="enter(event)" ondragleave="leave(event)" ondrop="drop(event)" ondragover="over(event)"></div>
+            <div class="card" >
+                <div class="cardHead" draggable="true" ondragstart="dragStart(event)" ondrag="drag(event)">
+                    <button class="show" onclick="show(event)">show</button>
+                
+                </div>
+                <div class="cardBody" draggable="false"></div>
+            </div>
+        </template>
+        <div id="main">
+            <button onclick="add()">add！</button>
+            <div class="append" number='1' ondragenter="enter(event)" ondragleave="leave(event)" ondrop="drop(event)" ondragover="over(event)"></div>
+            
+            
+            <div class="card" id="card1">
+                <div class="cardHead" draggable="true" ondragstart="dragStart(event)" ondrag="drag(event)">
+                    <button class="show" onclick="show(event)">show</button>
+                </div>
+                <div class="cardBody" draggable="false">
+                    <input type="text" />    
+                </div>
+            </div>
+
+            <div class="append" number='0' ondragenter="enter(event)" ondragleave="leave(event)" ondrop="drop(event)" ondragover="over(event)"></div>
+            
+        </div>
+       
+    </body>
+</html>

@@ -1,0 +1,93 @@
+.card:hover{
+    box-shadow: grey 0px 0px 8px  ;
+    z-index: 100;
+    transition: box-shadow 0.2s ease-out;
+}
+
+.card{
+    box-shadow: grey 0px 0px 0px  ;
+    z-index: 0;
+    transition: box-shadow 0.2s ease-out;
+}
+/* 卡片标题 */
+.cardHead{
+    height: 30px;
+    width: 235px;
+    padding: 5px 15px 5px 15px ;
+    /* border-radius:5px 5px 0px 0px ; */
+    background: grey;
+    user-select:none;
+
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* 卡片主体 */
+.cardBody{
+    width: 235px;
+    height: 120px;
+    padding: 15px;
+
+    background: white;
+    user-select:none;
+
+    display: block;
+    /* opacity: 1; */
+    transition: height 0.2s ease-out,height 0.2s ease-out,padding 0.2s ease-out,border-width 0.2s ease-out,width 0.2s ease-out;
+
+
+    border-style: solid;
+    border-width: 0px 1px 1px 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+}
+
+/* 卡片收缩 */
+.cardBodyNone{
+    /* opacity: 0;
+    display: none; */
+    padding: 0px 0px 0px 15px;
+    height: 0px;
+    background: white;
+    width: 250px;
+
+    border-style: solid;
+    border-width: 0px 1px 0px 1px;
+    border-color: rgba(0, 0, 0, 0.12);
+    
+    overflow: hidden;
+    transition: height 0.2s ease-out,height 0.2s ease-out,padding 0.2s ease-out,border-width 0.2s ease-out,width 0.2s ease-out;
+
+}
+
+
+
+.append{
+    width: 267px;
+    height: 20px;
+    background: transparent;
+}
+
+.append-ondragover{
+    width: 267px;
+    height: 20px;
+    background: green;
+	
+}
+
+/* html{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+} */
+
+body{
+    margin: 0;
+}
+#main{
+    height: 100%;
+    width: fit-content;
+    background:#F5F5F5;
+    padding: 0 20 0 20;
+    overflow-y: scroll;
+    scrollbar-width: thin;
+}
