@@ -12,4 +12,4 @@ interface plugMap{
 
 
 
-export {plugConfig};
+export {plugConfig,plugMap};

@@ -4,7 +4,7 @@
         {
             "name":"fuck",
             "type":"javascript",
-            "path":"./fuck/index.js"
+            "path":"index.js"
         }
     ]
 }

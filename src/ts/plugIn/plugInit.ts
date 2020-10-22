@@ -2,7 +2,7 @@
 import * as fs from "fs"
 import * as paa from 'path'
 
-import {plugConfig} from './plugInterface'
+import {plugConfig,plugMap} from './plugInterface'
 
 
 
@@ -43,10 +43,10 @@ function plugLoad(name:string){
     }
         
     let type=plug[0];
-    let path=plug[1];
-    if(type=="javascript"){
+    let path=paa.resolve(`./${name}`,plug[1]);
+    if(type.toLocaleLowerCase()=="javascript".toLocaleLowerCase()){
         jsPlug(name,path);
-    }else if(type=="python"){
+    }else if(type.toLocaleLowerCase()=="python".toLocaleLowerCase()){
         pythonPlug(name,path);
     }
 }
@@ -61,6 +61,28 @@ function jsPlug(name:string,path:string){
 
 function pythonPlug(name:string,path:string){
 
+}
+
+//注册插件到plugConfig.json
+function plugAdd(from:string){
+    let config;
+    try{
+        config=fs.readFileSync(paa.resolve(from,'plugConfig.json'),'utf8');
+    }catch{
+        throw 'Invalid Plugin:: Missing \'plugConfig.json\'';
+        
+    }
+    
+    let json:plugMap=JSON.parse(config);
+
+    
+    let Gconfig=fs.readFileSync(plugConfig,'utf8');
+    let Gjson:plugConfig=JSON.parse(Gconfig);
+
+    Gjson.plugMap.push(json);
+    plugMap.set(json.name,[json.type,json.path]);
+
+    
 }
 
 
@@ -79,3 +101,8 @@ function changeConfigPath(){
 
 
 plugInit();
+
+
+
+
+export {plugLoad, plugPath,plugAdd};
